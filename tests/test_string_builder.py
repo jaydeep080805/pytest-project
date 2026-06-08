@@ -40,10 +40,6 @@ def test_add_function_returns_error_when_adding_different_data_types():
     
     with pytest.raises(TypeError) as error:
         sb.add(39)
-        sb.add(-39)
-        sb.add(39.23409)
-        sb.add([])
-        sb.add({})
 
 def test_size_returns_five_when_five_letter_word_input():
     sb = StringBuilder()
